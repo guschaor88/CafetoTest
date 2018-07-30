@@ -1,0 +1,39 @@
+@import ../styles
+
+
+/* Container for flexboxes */
+
+*
+	box-sizing: border-box
+
+section 
+	display: -webkit-flex
+	display: flex
+	
+app-content 
+	width: 70%
+	height: auto
+
+app-menu 
+	width: 30%
+	height: inheritance
+	padding: 5px
+	background-color: $main-color3
+	color: $main-color2
+	border-right: 2px solid $main-color1
+	height: auto
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: $minimum-width-mobile) 
+	section 
+		-webkit-flex-direction: column
+		flex-direction: column
+    
+
+	app-content 
+		width: 100%
+    
+	app-menu 
+		width: 100%
+		height: 100%
+    

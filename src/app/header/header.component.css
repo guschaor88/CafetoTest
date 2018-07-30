@@ -1,0 +1,153 @@
+/*Define variables for all app*/
+body {
+  font: 100% Arial, Helvetica, sans-serif;
+  color: #283149;
+  background-color: #283149;
+}
+
+/* Functions */	
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #dbedf3;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00818a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #283149;
+}
+
+/* Style the header */
+header {
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #283149;
+  height: 70px;
+  border-bottom: 2px solid #404b69;
+  background-color: #00818a;
+  animation-name: headerAnimation;
+  animation-duration: 20s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: headerAnimation;
+  -webkit-animation-duration: 20s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: headerAnimation;
+  -moz-animation-duration: 20s;
+  -moz-animation-delay: 1s;
+  -moz-animation-iteration-count: infinite;
+}
+
+.divImg {
+  text-align: right;
+  width: 20%;
+  float: left;
+}
+
+.divH2 {
+  text-align: left;
+  width: 80%;
+  float: right;
+  height: 70px;
+}
+
+header div img {
+  width: 120px;
+  margin-top: -5px;
+}
+header div h2 {
+  font-size: 78px;
+  font-family: "Fredericka the Great", cursive;
+  margin-top: -5px;
+}
+
+@keyframes headerAnimation {
+  0% {
+    background: url("../../assets/img/collage.jpg") 0% 0% #dbedf3;
+    color: #283149;
+    text-shadow: 2px 2px 5px white;
+  }
+  25% {
+    background: url("../../assets/img/collage.jpg") 0% 25% #dbedf3;
+    color: #404b69;
+    text-shadow: 4px 4px 10px white;
+  }
+  50% {
+    background: url("../../assets/img/collage.jpg") 0% 50% #dbedf3;
+    color: #00818a;
+    text-shadow: 6px 6px 15px white;
+  }
+  75% {
+    background: url("../../assets/img/collage.jpg") 0% 75% main-color1;
+    color: #dbedf3;
+    text-shadow: 4px 4px 10px #283149;
+  }
+  100% {
+    background: url("../../assets/img/collage.jpg") 0% 100% #dbedf3;
+    color: #283149;
+    text-shadow: 2px 2px 5px white;
+  }
+}
+@-webkit-keyframes headerAnimation {
+  0% {
+    background: url("../../assets/img/collage.jpg") 0% 0% #dbedf3;
+    color: #283149;
+    text-shadow: 2px 2px 5px white;
+  }
+  25% {
+    background: url("../../assets/img/collage.jpg") 0% 25% #dbedf3;
+    color: #404b69;
+    text-shadow: 4px 4px 10px white;
+  }
+  50% {
+    background: url("../../assets/img/collage.jpg") 0% 50% #dbedf3;
+    color: #00818a;
+    text-shadow: 6px 6px 15px white;
+  }
+  75% {
+    background: url("../../assets/img/collage.jpg") 0% 75% main-color1;
+    color: #dbedf3;
+    text-shadow: 4px 4px 10px white;
+  }
+  100% {
+    background: url("../../assets/img/collage.jpg") 0% 100% #dbedf3;
+    color: #283149;
+    text-shadow: 2px 2px 5px white;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .divH2 {
+    text-align: center;
+  }
+
+  header div img {
+    width: 90px;
+  }
+  header div h2 {
+    font-size: 48px;
+    font-family: "Fredericka the Great", cursive;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .divH2 {
+    text-align: center;
+  }
+
+  header div img {
+    width: 60px;
+  }
+  header div h2 {
+    font-size: 28px;
+    font-family: "Fredericka the Great", cursive;
+  }
+}
+
+/*# sourceMappingURL=header.component.css.map */

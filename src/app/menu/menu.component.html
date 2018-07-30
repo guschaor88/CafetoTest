@@ -1,0 +1,27 @@
+<div id="searchBox">
+	<span class="titleRadio">Movie</span>
+	<input  #movieRadio name="radioSearch" type="radio" value="Movie" (click)="setSearchParameter(movieRadio.value)" checked>
+	<span class="titleRadio">Actor</span>
+	<input  #actorRadio name="radioSearch" type="radio" value="Actor" (click)="setSearchParameter(actorRadio.value)">
+	<input #searchBox id="search-box" placeholder="{{searchBoxText}}" [value]="searchInputValue" (keyup)="search(searchBox.value)"/>
+	<ul class="search-result" *ngIf="actorListSearch.length > 0">
+		<li *ngFor="let actor of actorListSearch" (click)="findActorDetail(actor)">
+	      <span>{{actor.name}}</span>
+	    </li>
+	</ul>
+	<ul class="search-result" *ngIf="movieListSearch.length > 0">
+		<li *ngFor="let movie of movieListSearch" (click)="findMovieDetail(movie)">
+	      <span>{{movie.title}}</span>
+	    </li>
+	</ul>
+</div>
+<div id="moviesBox">
+	<h4 class="titleMenu">{{moviesTitle}}</h4>
+	<div class="divMenu">
+		<div class="row">
+			<div class="column" *ngFor="let movie of movieListTop">
+				<img src="{{movie.poster_path}}" alt="{{movie.title}}" class="tile" (click)="getMovieDetailTop(movie)">
+			</div>
+		</div>
+	</div>
+</div>

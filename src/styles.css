@@ -1,0 +1,26 @@
+/*Define variables for all app*/
+body {
+  font: 100% Arial, Helvetica, sans-serif;
+  color: #283149;
+  background-color: #283149;
+}
+
+/* Functions */	
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #dbedf3;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00818a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #283149;
+}
+
+/*# sourceMappingURL=styles.css.map */

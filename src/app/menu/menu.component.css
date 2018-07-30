@@ -1,0 +1,173 @@
+/*Define variables for all app*/
+body {
+  font: 100% Arial, Helvetica, sans-serif;
+  color: #283149;
+  background-color: #283149;
+}
+
+/* Functions */	
+.titleMenu {
+  font-family: "Fredericka the Great", cursive;
+  color: #404b69;
+  text-shadow: 1px 1px #000;
+  font-size: 28px;
+  vertical-align: text-top;
+  text-align: center;
+  font-weight: bold;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #dbedf3;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00818a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #283149;
+}
+
+/* Style the navigation menu */
+#searchBox {
+  height: 70px;
+  vertical-align: middle;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+#moviesBox {
+  height: 48%;
+  text-align: center;
+}
+
+#search-box {
+  width: 90%;
+  border-radius: 10px 5px;
+  height: 30px;
+  color: #888;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 14px;
+  box-shadow: 1px 1px 4px #404b69;
+  padding-left: 20px;
+  margin-left: 20px;
+}
+
+#search-box:hover {
+  border-color: #dbedf3;
+  box-shadow: 1px 1px 4px #FFF;
+}
+
+.titleMenu {
+  margin-top: 5px;
+}
+
+.divMenu {
+  box-sizing: border-box;
+  margin-top: -5%;
+  height: min-content;
+}
+
+.tile {
+  height: 100%;
+  width: 100%;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0px;
+  align-items: center;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%;
+  flex: 25%;
+  max-width: 25%;
+  padding: 0px;
+}
+
+.column img {
+  margin-top: 0px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.column img:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  border-radius: 5px 10px;
+}
+
+.column img:active {
+  box-shadow: 1px 1px 20px #FFF;
+}
+
+.titleRadio {
+  font-family: "Fredericka the Great", cursive;
+  color: #404b69;
+  text-shadow: 1px 1px #000;
+  font-size: 13px;
+  vertical-align: text-top;
+  text-align: center;
+  font-weight: bold;
+  padding-left: 10px;
+  /* HeroSearch private styles */
+}
+
+.search-result li {
+  border-bottom: 1px solid #283149;
+  border-left: 1px solid #283149;
+  border-right: 1px solid #283149;
+  width: 220px;
+  height: 20px;
+  padding: 5px;
+  background-color: #dbedf3;
+  cursor: pointer;
+  list-style-type: none;
+}
+
+.search-result li:hover {
+  background-color: #00818a;
+  font-weight: bold;
+}
+
+.search-result li span {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #283149;
+  font-size: 12px;
+}
+
+ul.search-result {
+  display: block;
+  position: absolute;
+  top: 185px;
+  left: 130px;
+}
+
+@media only screen and (max-width: 950px) {
+  ul.search-result {
+    left: 40px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  ul.search-result {
+    left: 120px;
+  }
+}
+
+/*# sourceMappingURL=menu.component.css.map */

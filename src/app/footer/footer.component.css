@@ -1,0 +1,104 @@
+/*Define variables for all app*/
+body {
+  font: 100% Arial, Helvetica, sans-serif;
+  color: #283149;
+  background-color: #283149;
+}
+
+/* Functions */	
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #dbedf3;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00818a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #283149;
+}
+
+/* Style the footer */
+footer {
+  background-color: #dbedf3;
+  border-top: 2px solid #283149;
+  padding: 10px;
+  text-align: center;
+  color: #283149;
+  height: 70px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  font-family: "Fredericka the Great", cursive;
+}
+
+.divFooter {
+  -ms-flex: 33%;
+  flex: 33%;
+  max-width: 32%;
+  padding: 4px 4px;
+  font-size: 14px;
+}
+
+.informationFooter {
+  font-family: "Righteous", cursive;
+  font-weight: bold;
+  font-size: 16px;
+  color: #404b69;
+}
+
+.informationFooter a {
+  text-decoration: none;
+}
+
+.informationFooter a:active {
+  color: #404b69;
+}
+
+.informationDescription {
+  color: #283149;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 950px) {
+  footer {
+    padding: 10px;
+    text-align: center;
+    height: 210px;
+  }
+
+  .divFooter {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    padding: 4px 4px;
+    font-size: 14px;
+    border-bottom: 1px #283149 solid;
+  }
+}
+@media only screen and (max-width: 650px) {
+  footer {
+    padding: 10px;
+    text-align: center;
+    height: 210px;
+  }
+
+  .divFooter {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    padding: 4px 4px;
+    font-size: 14px;
+    border-bottom: 1px #283149 solid;
+  }
+}
+
+/*# sourceMappingURL=footer.component.css.map */

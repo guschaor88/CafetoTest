@@ -1,0 +1,129 @@
+/*Define variables for all app*/
+
+$font-primary:    Arial, Helvetica, sans-serif
+$minimum-width-mobile: 650px
+$medium-width-mobile: 950px
+$main-color1: #283149
+$main-color2: #404b69
+$main-color3: #00818a
+$main-color4: #dbedf3
+$font-family1: 'Sacramento', cursive
+$font-family2: 'Open Sans Condensed', sans-serif
+$font-family3: 'Fredericka the Great', cursive
+$font-family4: 'Righteous', cursive
+$font-color-unable: #888
+
+
+
+
+body
+	font: 100% $font-primary 
+	color: $main-color1
+	background-color: $main-color1
+
+
+/* Functions */	
+
+=transform($property)
+	-webkit-transform: $property
+	-ms-transform:     $property
+	transform:         $property
+	-moz-transform:    $property
+	-o-transform:      $property
+
+  
+=headerAnimation()
+	@keyframes headerAnimation
+		0%
+			background: url('../../assets/img/collage.jpg') 0% 0% $main-color4
+			color: $main-color1
+			text-shadow: 2px 2px 5px white
+		25%
+			background: url('../../assets/img/collage.jpg') 0% 25% $main-color4
+			color: $main-color2
+			text-shadow: 4px 4px 10px white
+		50%
+			background: url('../../assets/img/collage.jpg') 0% 50% $main-color4
+			color: $main-color3
+			text-shadow: 6px 6px 15px white
+		75%
+			background: url('../../assets/img/collage.jpg') 0% 75% main-color1
+			color: $main-color4
+			text-shadow: 4px 4px 10px $main-color1
+		100%
+			background: url('../../assets/img/collage.jpg') 0% 100% $main-color4
+			color: $main-color1
+			text-shadow: 2px 2px 5px white
+	@-webkit-keyframes headerAnimation
+		0%
+			background: url('../../assets/img/collage.jpg') 0% 0% $main-color4
+			color: $main-color1
+			text-shadow: 2px 2px 5px white
+		25%
+			background: url('../../assets/img/collage.jpg') 0% 25% $main-color4
+			color: $main-color2
+			text-shadow: 4px 4px 10px white
+		50%
+			background: url('../../assets/img/collage.jpg') 0% 50% $main-color4
+			color: $main-color3
+			text-shadow: 6px 6px 15px white
+		75%
+			background: url('../../assets/img/collage.jpg') 0% 75% main-color1
+			color: $main-color4
+			text-shadow: 4px 4px 10px white
+		100%
+			background: url('../../assets/img/collage.jpg') 0% 100% $main-color4
+			color: $main-color1
+			text-shadow: 2px 2px 5px white
+
+=animationName($name, $duration, $delay)
+	animation-name: $name
+	animation-duration: $duration
+	animation-delay: $delay
+	animation-iteration-count: infinite
+	-webkit-animation-name: $name
+	-webkit-animation-duration: $duration
+	-webkit-animation-delay: $delay
+	-webkit-animation-iteration-count: infinite
+	-moz-animation-name: $name
+	-moz-animation-duration: $duration
+	-moz-animation-delay: $delay
+	-moz-animation-iteration-count: infinite
+
+
+%menuAndContentTitle
+	font-family: $font-family3
+	color: $main-color2
+	text-shadow: 1px 1px #000
+	font-size: 28px
+	vertical-align: text-top
+	text-align: center
+	font-weight: bold
+
+%titleDescription
+	font-family: $font-family4
+	color: $main-color2
+	text-shadow: 1px 1px white
+	font-size: 16px
+	vertical-align: text-top
+	text-align: left
+
+%textDescription
+	font-family: $font-family2
+	color: $main-color1
+	font-size: 14px
+	vertical-align: text-top
+	text-align: center
+
+::-webkit-scrollbar
+	width: 10px
+
+::-webkit-scrollbar-track
+	background: $main-color4
+
+/* Handle */
+::-webkit-scrollbar-thumb
+	background: $main-color3
+
+::-webkit-scrollbar-thumb:hover
+	background: $main-color1

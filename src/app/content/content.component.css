@@ -1,0 +1,231 @@
+/*Define variables for all app*/
+body {
+  font: 100% Arial, Helvetica, sans-serif;
+  color: #283149;
+  background-color: #283149;
+}
+
+/* Functions */	
+article > fieldset > legend {
+  font-family: "Fredericka the Great", cursive;
+  color: #404b69;
+  text-shadow: 1px 1px #000;
+  font-size: 28px;
+  vertical-align: text-top;
+  text-align: center;
+  font-weight: bold;
+}
+
+.descriptionTitle {
+  font-family: "Righteous", cursive;
+  color: #404b69;
+  text-shadow: 1px 1px white;
+  font-size: 16px;
+  vertical-align: text-top;
+  text-align: left;
+}
+
+#divDescription {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #283149;
+  font-size: 14px;
+  vertical-align: text-top;
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #dbedf3;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00818a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #283149;
+}
+
+/* Style the content */
+article {
+  background-color: #00818a;
+  padding: 5px;
+  width: 99%;
+  text-align: center;
+  display: table;
+  justify-content: center;
+  align-items: center;
+}
+
+#mainDivContent {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: -webkit-fill-available;
+  border-radius: 5px 10px 3px 7px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+fieldset {
+  border-color: #404b69;
+  border-radius: 5px 10px 3px 7px;
+}
+
+.descriptionContent {
+  width: auto;
+  padding-top: 5px;
+  border: 0px;
+  margin: 0px;
+  background-color: rgba(219, 237, 243, 0.6);
+}
+
+#divDescription {
+  border-radius: 5px 10px 3px 7px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+.descriptionText {
+  margin-top: 0px;
+  -ms-flex: 49%;
+  flex: 49%;
+  max-width: 49%;
+  padding: 0 10px;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.imageDescription {
+  max-height: 360px;
+  max-width: 200px;
+  padding-right: 3px;
+  text-align: center;
+  margin-top: 0px;
+  -ms-flex: 45%;
+  flex: 45%;
+  max-width: 45%;
+  padding: 0 10px;
+  border-radius: 25px 20px 26px 27px;
+}
+
+.imageDescription:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  box-shadow: 1px 1px 20px #FFF;
+}
+
+.spacingDescription {
+  width: 30px;
+}
+
+.imgDescriptonBox {
+  text-align: center;
+  margin-top: 0px;
+  -ms-flex: 49%;
+  flex: 49%;
+  max-width: 49%;
+  padding: 0 4px;
+}
+
+#genrerBox {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  overflow: hidden;
+}
+
+#genrerBox li {
+  font-family: "Fredericka the Great", cursive;
+  font-weight: bold;
+  color: #00818a;
+  float: left;
+  font-size: 16px;
+  padding-right: 10px;
+  text-shadow: 1px 1px #283149;
+}
+
+#genrerBox li:hover {
+  text-shadow: 1px 1px #283149;
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
+
+#genrerBox li:first-child {
+  color: #283149;
+  font-size: 16px;
+  text-shadow: 0 0 #283149;
+}
+
+#genrerBox li:first-child:hover {
+  text-shadow: 0px 0px #283149;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+}
+
+.informationTitle {
+  font-family: "Fredericka the Great", cursive;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.companyLogo {
+  border-radius: 5px 10px 3px 7px;
+  text-align: center;
+  width: 100%;
+}
+
+.companyDescription {
+  margin-top: 0px;
+  -ms-flex: 100%;
+  flex: 100%;
+  max-width: 100%;
+  padding: 0 10px;
+  border-radius: 5px 10px 3px 7px;
+  text-align: justify;
+}
+
+.companyName {
+  color: #283149;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.companyNameDescription {
+  font-family: "Fredericka the Great", cursive;
+  font-weight: bold;
+  color: #00818a;
+  font-size: 14px;
+  text-shadow: 1px 1px #283149;
+}
+
+.companyDescription img {
+  max-width: 120px;
+  max-height: 250px;
+}
+
+.offer {
+  font-family: "Righteous", cursive;
+  color: #283149;
+  text-align: center;
+  font-size: 38px;
+}
+
+/*# sourceMappingURL=content.component.css.map */

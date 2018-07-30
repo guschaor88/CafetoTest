@@ -1,0 +1,152 @@
+@import ../../styles
+
+/* Style the content */
+article
+    background-color: $main-color3
+    padding: 5px
+    width: 99%
+    text-align: center
+    display: table
+    justify-content: center
+    align-items: center
+
+#mainDivContent
+  background-attachment: fixed
+  background-position: center
+  background-repeat: no-repeat
+  background-size: contain
+  height: -webkit-fill-available
+  border-radius: 5px 10px 3px 7px
+  display: table-cell
+  vertical-align: middle
+
+fieldset
+  border-color: $main-color2
+  border-radius: 5px 10px 3px 7px
+
+.descriptionContent
+  width: auto
+  padding-top: 5px
+  border: 0px
+  margin: 0px
+  background-color: rgba(219, 237, 243, 0.6)
+  
+article > fieldset > legend
+  @extend %menuAndContentTitle
+
+.descriptionTitle
+  @extend %titleDescription
+ 
+#divDescription
+  @extend %textDescription
+  border-radius: 5px 10px 3px 7px
+  display: -ms-flexbox
+  display: flex
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+  padding: 5px
+
+.descriptionText
+  margin-top: 0px
+  -ms-flex: 49%
+  flex: 49%
+  max-width: 49%
+  padding: 0 10px
+  font-weight: bold
+  text-align: justify
+
+.imageDescription
+  max-height: 360px
+  max-width: 200px
+  padding-right:3px
+  text-align: center
+  margin-top: 0px
+  -ms-flex: 45%
+  flex: 45%
+  max-width: 45%
+  padding: 0 10px
+  border-radius: 25px 20px 26px 27px
+
+.imageDescription:hover
+  +transform(scale(1.5))
+  box-shadow: 1px 1px 20px #FFF
+
+.spacingDescription
+  width: 30px
+
+.imgDescriptonBox
+  text-align: center
+  margin-top: 0px
+  -ms-flex: 49%
+  flex: 49%
+  max-width: 49%
+  padding: 0 4px
+
+#genrerBox
+  list-style-type: none
+  margin: 0
+  padding: 5px
+  overflow: hidden
+
+#genrerBox li
+  font-family: $font-family3
+  font-weight: bold
+  color: $main-color3
+  float: left
+  font-size: 16px
+  padding-right: 10px
+  text-shadow: 1px 1px $main-color1
+
+#genrerBox li:hover
+  text-shadow: 1px 1px $main-color1
+  +transform(scale(1.5))
+
+#genrerBox li:first-child
+  color: $main-color1
+  font-size: 16px
+  text-shadow: 0 0 $main-color1
+
+#genrerBox li:first-child:hover
+  text-shadow: 0px 0px $main-color1
+  +transform(scale(1))
+
+.informationTitle
+  font-family: $font-family3
+  font-weight: bold
+  font-size: 12px
+
+.companyLogo
+  border-radius: 5px 10px 3px 7px
+  text-align: center
+  width: 100%
+
+.companyDescription
+  margin-top: 0px
+  -ms-flex: 100%
+  flex: 100%
+  max-width: 100%
+  padding: 0 10px
+  border-radius: 5px 10px 3px 7px
+  text-align: justify
+
+.companyName
+  color: $main-color1
+  font-size: 14px
+  font-weight: bold
+ 
+.companyNameDescription
+  font-family: $font-family3
+  font-weight: bold
+  color: $main-color3
+  font-size: 14px
+  text-shadow: 1px 1px $main-color1
+
+.companyDescription img
+  max-width: 120px
+  max-height: 250px
+
+.offer
+  font-family: $font-family4
+  color: $main-color1
+  text-align: center
+  font-size: 38px

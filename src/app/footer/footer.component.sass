@@ -1,0 +1,71 @@
+@import ../../styles
+
+/* Style the footer */
+footer 
+  background-color: $main-color4
+  border-top: 2px solid $main-color1
+  padding: 10px
+  text-align: center
+  color: $main-color1
+  height: 70px
+  display: -ms-flexbox
+  display: flex
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+  padding: 0 4px
+  font-family: $font-family3
+
+.divFooter
+  -ms-flex: 33%
+  flex: 33%
+  max-width: 32%
+  padding: 4px 4px
+  font-size: 14px
+
+.informationFooter
+  font-family: $font-family4
+  font-weight: bold
+  font-size: 16px
+  color: $main-color2
+
+.informationFooter a
+  text-decoration: none
+
+.informationFooter a:active
+  color: $main-color2
+
+.informationDescription
+  color: $main-color1
+  font-size: 14px
+  font-weight: bold
+  
+
+@media only screen and (max-width: $medium-width-mobile)  
+  footer 
+    padding: 10px
+    text-align: center
+    height: 210px
+  
+  .divFooter
+    -ms-flex: 100%
+    flex: 100%
+    max-width: 100%
+    padding: 4px 4px
+    font-size: 14px
+    border-bottom: 1px $main-color1 solid
+
+
+
+@media only screen and (max-width: $minimum-width-mobile)  
+  footer 
+    padding: 10px
+    text-align: center
+    height: 210px
+
+  .divFooter
+    -ms-flex: 100%
+    flex: 100%
+    max-width: 100%
+    padding: 4px 4px
+    font-size: 14px
+    border-bottom: 1px $main-color1 solid

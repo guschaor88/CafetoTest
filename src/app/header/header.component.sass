@@ -1,0 +1,63 @@
+@import ../../styles
+
+/* Style the header */
+header
+    padding: 30px
+    text-align: center
+    font-size: 35px
+    color: $main-color1
+    height: 70px
+    border-bottom: 2px solid $main-color2
+    background-color: $main-color3
+    +animationName(headerAnimation, 20s, 1s)
+
+.divImg
+  text-align: right
+  width: 20%
+  float: left
+
+
+.divH2
+  text-align: left
+  width: 80%
+  float: right
+  height: 70px
+  
+header div
+  img
+    width:120px
+    margin-top: -5px
+
+  h2
+    font-size: 78px
+    font-family: $font-family3
+    margin-top: -5px
+
++headerAnimation()
+
+@media only screen and (max-width: $medium-width-mobile)  
+  .divH2
+    text-align: center
+    
+  header div
+    img
+      width:90px
+
+    h2
+      font-size: 48px
+      font-family: $font-family3
+
+
+
+@media only screen and (max-width: $minimum-width-mobile)  
+  
+  .divH2
+    text-align: center
+
+  header div
+    img
+      width:60px
+
+    h2
+      font-size: 28px
+      font-family: $font-family3

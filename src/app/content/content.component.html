@@ -1,0 +1,60 @@
+<article>
+   	<fieldset *ngIf="movieSelected">
+   		<legend>{{movieSelected.title}}</legend>
+   		<div id="mainDivContent" [style.background]="'url('+ movieSelected.poster_path+')'">
+   			<fieldset class="descriptionContent">
+   				<div id="divDescription">
+					<div class="descriptionText">
+						<span class="descriptionTitle">{{descriptionTitle}}</span>
+						<p>{{movieSelected.overview}}</p>
+						<ul id="genrerBox" >
+							<li>{{genresTitle}}</li>
+							<li *ngFor="let genrer of movieSelected.movieDetail.genres">{{genrer.name}}</li>
+						</ul>
+						<span class="informationTitle">Runtime: </span> <span>{{movieSelected.movieDetail.runtime}} minutes</span>
+						<br/>
+						<span class="informationTitle">Release Date: </span> <span>{{movieSelected.movieDetail.release_date}}</span>
+						<br/>
+						<span class="informationTitle">Original Language: </span> <span>{{movieSelected.movieDetail.original_language | languages}}</span>
+						<br/>
+						<span class="informationTitle">Status: </span> <span>{{movieSelected.movieDetail.status}}</span>
+						<br/>
+						<span class="informationTitle">Popularity: </span> <span>{{movieSelected.movieDetail.popularity}}</span>
+						<br/>
+						<span class="informationTitle">Votes: </span> <span>{{movieSelected.movieDetail.vote_count}}</span>
+						<br/>
+						<span class="informationTitle">Score: </span> <span>{{movieSelected.movieDetail.vote_average}}</span>
+					</div>
+					<!--<img class="imageDescription" src={{movieSelected.poster_path}} alt="Image {{movieSelected.title}}">-->
+					<img class="imageDescription" src={{movieSelected.backdrop_path}} alt="Image {{movieSelected.title}}">
+					
+				</div>
+				<hr/>
+				<div id="divDescription">
+					<div *ngFor="let company of movieSelected.movieDetail.production_companies">
+						<div class="companyDescription">
+							<span class="companyName">Production Company: </span> <span class="companyNameDescription">{{company.name}}</span>
+							<br/>
+							<span class="companyName">Original Country: </span> <span class="companyNameDescription">{{company.origin_country}}</span>
+							<br/>
+							<img src="{{company.logo_path}}" alt="{{company.name}}" >
+						</div>
+					</div>
+					<div *ngFor="let country of movieSelected.movieDetail.production_countries">
+						<div class="companyDescription">
+							<span class="companyName">Production Country: </span> <span class="companyNameDescription">{{country.name}}</span>
+							<br/>
+							<span class="companyName">Norma: </span> <span class="companyNameDescription">{{country.iso_3166_1}}</span>
+						</div>
+					</div>
+				</div>
+				<hr/>
+				<div id="divDescription">
+					<div  class="companyLogo">
+						<p class="offer">{{movieSelected.movieDetail.tagline}}</p>
+					</div>
+				</div>
+   			</fieldset>
+   		</div>
+   	</fieldset>
+</article>
